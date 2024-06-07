@@ -73,3 +73,7 @@ end
 gem "devise"
 gem "mini_magick"
 gem "image_processing"
+
+group :production do
+  gem 'pg'
+end
