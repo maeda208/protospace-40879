@@ -15,7 +15,7 @@ default: &default
 
 development:
   <<: *default
-    adapter: mysql2
+  adapter: mysql2
   username: root
   password:
   host: localhost
@@ -54,5 +54,5 @@ test:
 #
 production:
   <<: *default
-   adapter: postgresql
+  adapter: postgresql
   url: <%= ENV['DATABASE_URL'] %>
