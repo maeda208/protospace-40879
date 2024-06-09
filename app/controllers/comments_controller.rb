@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
       redirect_to prototype_comments_path(@prototype)
     else
       @comments = @prototype.comments.includes(:user)
-      render :index, status: :unprocessable_entity
+      render "prototypes/show"
     end
   end
   end
